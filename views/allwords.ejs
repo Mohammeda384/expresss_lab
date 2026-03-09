@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> These are all the words</h1>
+    <% for(counter=0; counter <lines.length; counter++){ %>
+        <p>
+            <% let [word, part, definition]= lines[counter].split('\t'); %>
+        </p>
+
+        <p>
+            <%= word %>
+            <%= part %>
+            <%= definition %>
+            
+        </p>
+        <% } %>
+
+
+</body>
+
+</html>
